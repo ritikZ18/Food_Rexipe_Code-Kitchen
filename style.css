@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+img{
+    height:100% ;
+    width: 100%;
+    object-fit: cover;
+}
+
+html{
+    font-family: 'Nunito';
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section{
+    min-height: 100vh   ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background: rgb(26, 26, 27);
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.brand{
+    align-items: center;
+    text-align: center;
+        font-size: 4rem;
+        color: aliceblue;
+        margin-bottom: 30px;
+}
+
+form{
+    width: 90%;
+    max-width: 440px;
+    border-radius: 4px;
+    margin: 20px auto;
+    background-color: azure;
+}
+
+form input{
+    width: 90%;
+    padding: 10px;
+    display: inline-block;
+
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+form ion-ion{
+    width: 9%;
+    font-size: 3rem;
+    display: inline-block;
+    margin: -9px;
+    background: rgb(76, 76, 77);
+   
+}
+
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template:auto / repeat(auto-fit,minmax(360px,1fr)) ;
+
+}
+
+.item{
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgb(36, 36, 37);
+    padding: 15px;
+    
+
+}
+
+.item img{
+    width: 100%;
+        height: 300px;
+        border-radius: 4px;
+
+
+}
+
+ .flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+
+         
+}
+.item .title{
+    color: whitesmoke;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 20px 10px 0 0;
+
+}
+
+.view-button{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    color: white;
+    background-color:#404041 ;
+font-size: 1.4rem;
+align-self: flex-start;
+margin-top: 20px;
+
+
+}
+.view-button::after{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    color: white;
+    background-color:#404041 ;
+font-size: 1.4rem;
+align-self: flex-start;
+margin-top: 20px;
+
+}
+
+
+.item-data{
+    color: whitesmoke;
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+
+}
+
+.container.initial .brand {
+    font-size: 7rem;
+  }
+  .container.initial form {
+    max-width: 800px;
+  }
+  .container.initial form input {
+    padding: 20px;
+    font-size: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .search-result {
+      grid-gap: 10px;
+    }
+    .container.initial .brand {
+      font-size: 4rem;
+    }
+    .container.initial form {
+      max-width: 500px;
+    }
+    .container.initial form input {
+      padding: 10px;
+      font-size: 2rem;
+    }
+  }
